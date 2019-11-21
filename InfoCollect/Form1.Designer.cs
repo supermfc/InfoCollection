@@ -1,0 +1,722 @@
+﻿namespace InfoCollect
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// 必需的设计器变量。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清理所有正在使用的资源。
+        /// </summary>
+        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows 窗体设计器生成的代码
+
+        /// <summary>
+        /// 设计器支持所需的方法 - 不要修改
+        /// 使用代码编辑器修改此方法的内容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.cboVideo = new System.Windows.Forms.ComboBox();
+            this.cboResolution = new System.Windows.Forms.ComboBox();
+            this.btnConnect = new System.Windows.Forms.Button();
+            this.btnCut = new System.Windows.Forms.Button();
+            this.btnPic = new System.Windows.Forms.Button();
+            this.vispShoot = new AForge.Controls.VideoSourcePlayer();
+            this.picbPreview = new AForge.Controls.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cBCarType = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.cBCarColor = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.tBCarNumber = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tBCar = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tBWorkDepartment = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.tBPhone = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tBNowLiveArea = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tBIDAddress = new System.Windows.Forms.TextBox();
+            this.tBNation = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tBShenFenID = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cBSex = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tBName = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.tBLouYuanName = new System.Windows.Forms.TextBox();
+            this.tBSheQuName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.bSave = new System.Windows.Forms.Button();
+            this.bReadID = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.lSavedIndex = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.tBLouNumber = new System.Windows.Forms.TextBox();
+            this.tBDanYuan = new System.Windows.Forms.TextBox();
+            this.tBRoom = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picbPreview)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // cboVideo
+            // 
+            this.cboVideo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboVideo.FormattingEnabled = true;
+            this.cboVideo.Location = new System.Drawing.Point(626, 31);
+            this.cboVideo.Name = "cboVideo";
+            this.cboVideo.Size = new System.Drawing.Size(140, 20);
+            this.cboVideo.TabIndex = 6;
+            this.cboVideo.SelectedIndexChanged += new System.EventHandler(this.cboVideo_SelectedIndexChanged);
+            // 
+            // cboResolution
+            // 
+            this.cboResolution.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboResolution.FormattingEnabled = true;
+            this.cboResolution.Location = new System.Drawing.Point(824, 31);
+            this.cboResolution.Name = "cboResolution";
+            this.cboResolution.Size = new System.Drawing.Size(131, 20);
+            this.cboResolution.TabIndex = 7;
+            // 
+            // btnConnect
+            // 
+            this.btnConnect.Location = new System.Drawing.Point(989, 30);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(46, 23);
+            this.btnConnect.TabIndex = 8;
+            this.btnConnect.Text = "连接";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
+            // 
+            // btnCut
+            // 
+            this.btnCut.Location = new System.Drawing.Point(1057, 30);
+            this.btnCut.Name = "btnCut";
+            this.btnCut.Size = new System.Drawing.Size(46, 23);
+            this.btnCut.TabIndex = 9;
+            this.btnCut.Text = "断开";
+            this.btnCut.UseVisualStyleBackColor = true;
+            this.btnCut.Click += new System.EventHandler(this.btnCut_Click);
+            // 
+            // btnPic
+            // 
+            this.btnPic.Enabled = false;
+            this.btnPic.Location = new System.Drawing.Point(179, 584);
+            this.btnPic.Name = "btnPic";
+            this.btnPic.Size = new System.Drawing.Size(78, 37);
+            this.btnPic.TabIndex = 4;
+            this.btnPic.Text = "拍照";
+            this.btnPic.UseVisualStyleBackColor = true;
+            this.btnPic.Click += new System.EventHandler(this.btnPic_Click);
+            // 
+            // vispShoot
+            // 
+            this.vispShoot.Location = new System.Drawing.Point(568, 84);
+            this.vispShoot.Name = "vispShoot";
+            this.vispShoot.Size = new System.Drawing.Size(768, 597);
+            this.vispShoot.TabIndex = 3;
+            this.vispShoot.Text = "videoSourcePlayer1";
+            this.vispShoot.VideoSource = null;
+            // 
+            // picbPreview
+            // 
+            this.picbPreview.Image = null;
+            this.picbPreview.Location = new System.Drawing.Point(330, 570);
+            this.picbPreview.Name = "picbPreview";
+            this.picbPreview.Size = new System.Drawing.Size(121, 76);
+            this.picbPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbPreview.TabIndex = 4;
+            this.picbPreview.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(571, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "摄像头：";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(781, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "像素：";
+            // 
+            // cBCarType
+            // 
+            this.cBCarType.FormattingEnabled = true;
+            this.cBCarType.Items.AddRange(new object[] {
+            "小客车",
+            "面包车",
+            "小型轿车",
+            "皮卡",
+            "大货车",
+            "房车",
+            "小货车"});
+            this.cBCarType.Location = new System.Drawing.Point(300, 173);
+            this.cBCarType.Name = "cBCarType";
+            this.cBCarType.Size = new System.Drawing.Size(169, 20);
+            this.cBCarType.TabIndex = 9;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(253, 176);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(41, 12);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "车型：";
+            // 
+            // cBCarColor
+            // 
+            this.cBCarColor.FormattingEnabled = true;
+            this.cBCarColor.Items.AddRange(new object[] {
+            "白色",
+            "红色",
+            "黑色",
+            "棕色",
+            "香槟色",
+            "绿色",
+            "黄色",
+            "蓝色",
+            "灰色"});
+            this.cBCarColor.Location = new System.Drawing.Point(84, 173);
+            this.cBCarColor.Name = "cBCarColor";
+            this.cBCarColor.Size = new System.Drawing.Size(135, 20);
+            this.cBCarColor.TabIndex = 8;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(16, 173);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(65, 12);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "车辆颜色：";
+            // 
+            // tBCarNumber
+            // 
+            this.tBCarNumber.Location = new System.Drawing.Point(300, 123);
+            this.tBCarNumber.Name = "tBCarNumber";
+            this.tBCarNumber.Size = new System.Drawing.Size(167, 21);
+            this.tBCarNumber.TabIndex = 7;
+            this.tBCarNumber.Text = "豫H";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(229, 126);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(65, 12);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "车牌号码：";
+            // 
+            // tBCar
+            // 
+            this.tBCar.Location = new System.Drawing.Point(84, 119);
+            this.tBCar.Name = "tBCar";
+            this.tBCar.Size = new System.Drawing.Size(135, 21);
+            this.tBCar.TabIndex = 6;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(16, 120);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(65, 12);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "车辆品牌：";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label24);
+            this.groupBox2.Controls.Add(this.label23);
+            this.groupBox2.Controls.Add(this.label22);
+            this.groupBox2.Controls.Add(this.tBRoom);
+            this.groupBox2.Controls.Add(this.tBDanYuan);
+            this.groupBox2.Controls.Add(this.tBLouNumber);
+            this.groupBox2.Controls.Add(this.cBCarType);
+            this.groupBox2.Controls.Add(this.tBWorkDepartment);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.cBCarColor);
+            this.groupBox2.Controls.Add(this.tBPhone);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.tBCarNumber);
+            this.groupBox2.Controls.Add(this.tBNowLiveArea);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.tBCar);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Location = new System.Drawing.Point(30, 349);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(504, 215);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "人员信息";
+            // 
+            // tBWorkDepartment
+            // 
+            this.tBWorkDepartment.Location = new System.Drawing.Point(301, 74);
+            this.tBWorkDepartment.Name = "tBWorkDepartment";
+            this.tBWorkDepartment.Size = new System.Drawing.Size(168, 21);
+            this.tBWorkDepartment.TabIndex = 5;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(229, 79);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(65, 12);
+            this.label12.TabIndex = 4;
+            this.label12.Text = "工作单位：";
+            // 
+            // tBPhone
+            // 
+            this.tBPhone.Location = new System.Drawing.Point(84, 74);
+            this.tBPhone.Name = "tBPhone";
+            this.tBPhone.Size = new System.Drawing.Size(135, 21);
+            this.tBPhone.TabIndex = 4;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(16, 74);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(65, 12);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "联系电话：";
+            // 
+            // tBNowLiveArea
+            // 
+            this.tBNowLiveArea.Location = new System.Drawing.Point(84, 30);
+            this.tBNowLiveArea.Name = "tBNowLiveArea";
+            this.tBNowLiveArea.Size = new System.Drawing.Size(135, 21);
+            this.tBNowLiveArea.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(16, 32);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(65, 12);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "现居住地：";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.tBIDAddress);
+            this.groupBox3.Controls.Add(this.tBNation);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.tBShenFenID);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.cBSex);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.tBName);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Location = new System.Drawing.Point(30, 149);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(504, 151);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "身份证信息";
+            // 
+            // tBIDAddress
+            // 
+            this.tBIDAddress.Location = new System.Drawing.Point(104, 103);
+            this.tBIDAddress.Name = "tBIDAddress";
+            this.tBIDAddress.Size = new System.Drawing.Size(365, 21);
+            this.tBIDAddress.TabIndex = 4;
+            // 
+            // tBNation
+            // 
+            this.tBNation.Location = new System.Drawing.Point(404, 28);
+            this.tBNation.Name = "tBNation";
+            this.tBNation.Size = new System.Drawing.Size(65, 21);
+            this.tBNation.TabIndex = 2;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(369, 32);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(41, 12);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "民族：";
+            // 
+            // tBShenFenID
+            // 
+            this.tBShenFenID.Location = new System.Drawing.Point(104, 66);
+            this.tBShenFenID.Name = "tBShenFenID";
+            this.tBShenFenID.Size = new System.Drawing.Size(365, 21);
+            this.tBShenFenID.TabIndex = 3;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(18, 103);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(77, 12);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "身份证地址：";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(18, 67);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 12);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "身份证号码：";
+            // 
+            // cBSex
+            // 
+            this.cBSex.FormattingEnabled = true;
+            this.cBSex.Items.AddRange(new object[] {
+            "男",
+            "女"});
+            this.cBSex.Location = new System.Drawing.Point(300, 28);
+            this.cBSex.Name = "cBSex";
+            this.cBSex.Size = new System.Drawing.Size(53, 20);
+            this.cBSex.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(253, 31);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 12);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "性别：";
+            // 
+            // tBName
+            // 
+            this.tBName.Location = new System.Drawing.Point(104, 28);
+            this.tBName.Name = "tBName";
+            this.tBName.Size = new System.Drawing.Size(135, 21);
+            this.tBName.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(54, 31);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(41, 12);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "姓名：";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.tBLouYuanName);
+            this.groupBox4.Controls.Add(this.tBSheQuName);
+            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Controls.Add(this.label3);
+            this.groupBox4.Location = new System.Drawing.Point(30, 12);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(504, 74);
+            this.groupBox4.TabIndex = 0;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "社区信息";
+            // 
+            // tBLouYuanName
+            // 
+            this.tBLouYuanName.Location = new System.Drawing.Point(301, 36);
+            this.tBLouYuanName.Name = "tBLouYuanName";
+            this.tBLouYuanName.Size = new System.Drawing.Size(168, 21);
+            this.tBLouYuanName.TabIndex = 1;
+            // 
+            // tBSheQuName
+            // 
+            this.tBSheQuName.Location = new System.Drawing.Point(84, 35);
+            this.tBSheQuName.Name = "tBSheQuName";
+            this.tBSheQuName.Size = new System.Drawing.Size(135, 21);
+            this.tBSheQuName.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(235, 38);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 12);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "楼院名称:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(18, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 12);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "社区名称:";
+            // 
+            // bSave
+            // 
+            this.bSave.Location = new System.Drawing.Point(179, 658);
+            this.bSave.Name = "bSave";
+            this.bSave.Size = new System.Drawing.Size(78, 37);
+            this.bSave.TabIndex = 5;
+            this.bSave.Text = "信息入库";
+            this.bSave.UseVisualStyleBackColor = true;
+            this.bSave.Click += new System.EventHandler(this.bSave_Click);
+            // 
+            // bReadID
+            // 
+            this.bReadID.Location = new System.Drawing.Point(251, 100);
+            this.bReadID.Name = "bReadID";
+            this.bReadID.Size = new System.Drawing.Size(88, 37);
+            this.bReadID.TabIndex = 1;
+            this.bReadID.Text = "读取身份证";
+            this.bReadID.UseVisualStyleBackColor = true;
+            this.bReadID.Click += new System.EventHandler(this.bReadID_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label17.Location = new System.Drawing.Point(325, 666);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(109, 20);
+            this.label17.TabIndex = 11;
+            this.label17.Text = "入库序号：";
+            // 
+            // lSavedIndex
+            // 
+            this.lSavedIndex.AutoSize = true;
+            this.lSavedIndex.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lSavedIndex.ForeColor = System.Drawing.Color.DarkRed;
+            this.lSavedIndex.Location = new System.Drawing.Point(430, 664);
+            this.lSavedIndex.Name = "lSavedIndex";
+            this.lSavedIndex.Size = new System.Drawing.Size(0, 20);
+            this.lSavedIndex.TabIndex = 12;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label18.ForeColor = System.Drawing.Color.Red;
+            this.label18.Location = new System.Drawing.Point(32, 106);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(189, 19);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "第一步：读取身份证";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label19.ForeColor = System.Drawing.Color.Red;
+            this.label19.Location = new System.Drawing.Point(32, 313);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(209, 19);
+            this.label19.TabIndex = 14;
+            this.label19.Text = "第二步：录入人员信息";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label20.ForeColor = System.Drawing.Color.Red;
+            this.label20.Location = new System.Drawing.Point(32, 590);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(129, 19);
+            this.label20.TabIndex = 15;
+            this.label20.Text = "第三步：拍照";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label21.ForeColor = System.Drawing.Color.Red;
+            this.label21.Location = new System.Drawing.Point(32, 664);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(129, 19);
+            this.label21.TabIndex = 16;
+            this.label21.Text = "第四步：入库";
+            // 
+            // tBLouNumber
+            // 
+            this.tBLouNumber.Location = new System.Drawing.Point(252, 32);
+            this.tBLouNumber.Name = "tBLouNumber";
+            this.tBLouNumber.Size = new System.Drawing.Size(42, 21);
+            this.tBLouNumber.TabIndex = 1;
+            // 
+            // tBDanYuan
+            // 
+            this.tBDanYuan.Location = new System.Drawing.Point(335, 32);
+            this.tBDanYuan.Name = "tBDanYuan";
+            this.tBDanYuan.Size = new System.Drawing.Size(39, 21);
+            this.tBDanYuan.TabIndex = 2;
+            // 
+            // tBRoom
+            // 
+            this.tBRoom.Location = new System.Drawing.Point(415, 32);
+            this.tBRoom.Name = "tBRoom";
+            this.tBRoom.Size = new System.Drawing.Size(39, 21);
+            this.tBRoom.TabIndex = 3;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(300, 35);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(29, 12);
+            this.label22.TabIndex = 10;
+            this.label22.Text = "号楼";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(381, 35);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(29, 12);
+            this.label23.TabIndex = 17;
+            this.label23.Text = "单元";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(458, 37);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(17, 12);
+            this.label24.TabIndex = 18;
+            this.label24.Text = "室";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1361, 723);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.lSavedIndex);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.bReadID);
+            this.Controls.Add(this.bSave);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.picbPreview);
+            this.Controls.Add(this.vispShoot);
+            this.Controls.Add(this.btnPic);
+            this.Controls.Add(this.btnCut);
+            this.Controls.Add(this.btnConnect);
+            this.Controls.Add(this.cboResolution);
+            this.Controls.Add(this.cboVideo);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "社区人员信息采集-V1.0";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picbPreview)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.ComboBox cboVideo;
+        private System.Windows.Forms.ComboBox cboResolution;
+        private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Button btnCut;
+        private System.Windows.Forms.Button btnPic;
+        private AForge.Controls.VideoSourcePlayer vispShoot;
+        private AForge.Controls.PictureBox picbPreview;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox tBShenFenID;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cBSex;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tBName;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox tBLouYuanName;
+        private System.Windows.Forms.TextBox tBSheQuName;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cBCarType;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox cBCarColor;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox tBCarNumber;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox tBCar;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox tBWorkDepartment;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox tBPhone;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox tBNowLiveArea;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox tBIDAddress;
+        private System.Windows.Forms.TextBox tBNation;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button bSave;
+        private System.Windows.Forms.Button bReadID;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lSavedIndex;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox tBRoom;
+        private System.Windows.Forms.TextBox tBDanYuan;
+        private System.Windows.Forms.TextBox tBLouNumber;
+    }
+}
+
