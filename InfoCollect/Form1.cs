@@ -30,13 +30,27 @@ namespace InfoCollect
         const int NATION = 7;
         const int SHENFENADDRESS = 8;
         const int NOWADDRESS = 9;
-        const int PHONE = 10;
-        const int WORKDEPARTMENT = 11;
-        const int CARPAN = 25;
-        const int CARNUMBER = 26;
-        const int CARCOLOR = 27;
-        const int CARTYPE = 28;
-        const int MAGICSN = 33;
+        const int FENLIREASON = 10;
+        const int GUOJI = 11;
+        const int GUDINGPHONE = 12;
+        const int PHONE1 = 13;
+        const int PHONE2 = 14;
+        const int WORKDEPARTMENT = 15;
+        const int SHENGAO = 16;
+        const int XUEXING = 17;
+        const int TECHANG = 18;
+        const int LIVETYPE = 19;
+        const int ISHUZHU = 20;
+        const int HUZHURELATION = 21;
+        const int NOCARNUMBER = 22;
+        const int NOCARDETAIL = 23;
+        const int CARNUM = 24;        //拥有机动车数量
+        const int CARPAN = 25;      //车辆品牌
+        const int CARNUMBER = 26;   //车牌号码
+        const int CARCOLOR = 27;    //车辆颜色
+        const int CARTYPE = 28;     //车型
+               
+        const int MAGICSN = 36;
 
 
         private FilterInfoCollection videoDevices;//所有摄像设备
@@ -274,7 +288,7 @@ namespace InfoCollect
         private void clearInfo()
         {
             //tBNowLiveArea.Text = "";
-            tBPhone.Text = "";
+            tBCarNum.Text = "";
             tBWorkDepartment.Text = "";
 
             tBName.Text = "";
@@ -292,6 +306,19 @@ namespace InfoCollect
             tBDanYuan.Text = "";
             tBRoom.Text = "";
             tBLouNumber.Focus();
+
+            tBRenHuReason.Text = "";
+            tBGuDingPhone.Text = "";
+            tBPhone1.Text = "";
+            tBPhone2.Text = "";
+            tBShenGao.Text = "";
+            cBXueXing.SelectedIndex = -1;
+            tBTeChang.Text = "";
+            cBLiveType.SelectedIndex = -1;
+            tBHuZhuRelation.Text = "";
+            tBNoCarNumber.Text = "";
+            tBNoCarDetail.Text = "";
+            
         }
         private bool CheckInfo()
         {
@@ -320,13 +347,15 @@ namespace InfoCollect
             cellsn.SetCellValue(sn);
 
             //return true;
-
+            //社区名称和楼院名称
             ICell cellSheQuName = row.CreateCell(SHEQUNAME);
             cellSheQuName.SetCellValue(tBSheQuName.Text.Trim());
 
             ICell cellLouYuanName = row.CreateCell(LOUYUANNAME);
             cellLouYuanName.SetCellValue(tBLouYuanName.Text.Trim());
 
+
+            //身份证信息区
             ICell cellname = row.CreateCell(NAME);
             cellname.SetCellValue(tBName.Text.Trim());
 
@@ -345,16 +374,67 @@ namespace InfoCollect
             ICell cellShenFenIDAddress = row.CreateCell(SHENFENADDRESS);
             cellShenFenIDAddress.SetCellValue(tBIDAddress.Text.Trim());
 
+            //其它信息区
             ICell cellNowLiveAddress = row.CreateCell(NOWADDRESS);
             string nowLive = tBNowLiveArea.Text.Trim() + tBLouNumber.Text.Trim() + "号楼" + tBDanYuan.Text.Trim() + "单元" + tBRoom.Text.Trim() + "室";
             //cellNowLiveAddress.SetCellValue(tBNowLiveArea.Text.Trim());
             cellNowLiveAddress.SetCellValue(nowLive);
 
-            ICell cellPhone = row.CreateCell(PHONE);
-            cellPhone.SetCellValue(tBPhone.Text.Trim());
+            ICell cellRenHuReason = row.CreateCell(FENLIREASON);
+            cellRenHuReason.SetCellValue(tBRenHuReason.Text.Trim());
 
+            ICell cellGuoJi = row.CreateCell(GUOJI);
+            cellGuoJi.SetCellValue(tBGuoJi.Text.Trim());
+
+            ICell cellGuDingPhone = row.CreateCell(GUDINGPHONE);
+            cellGuDingPhone.SetCellValue(tBGuDingPhone.Text.Trim());
+
+            ICell cellPhone1 = row.CreateCell(PHONE1);
+            cellPhone1.SetCellValue(tBPhone1.Text.Trim());
+
+            ICell cellPhone2 = row.CreateCell(PHONE2);
+            cellPhone2.SetCellValue(tBPhone2.Text.Trim());
+
+            //ICell cellPhone = row.CreateCell(PHONE);
+            //cellPhone.SetCellValue(tBCarNum.Text.Trim());
+
+
+            //详细工作单位
             ICell cellWorkDepartment = row.CreateCell(WORKDEPARTMENT);
             cellWorkDepartment.SetCellValue(tBWorkDepartment.Text.Trim());
+
+
+            ICell cellShenGao = row.CreateCell(SHENGAO);
+            cellShenGao.SetCellValue(tBShenGao.Text.Trim());
+
+            ICell cellXueXing = row.CreateCell(XUEXING);
+            cellXueXing.SetCellValue(cBXueXing.Text.Trim());
+
+            ICell cellTeChang = row.CreateCell(TECHANG);
+            cellTeChang.SetCellValue(tBTeChang.Text.Trim());
+
+            ICell cellLiveType = row.CreateCell(LIVETYPE);
+            cellLiveType.SetCellValue(cBLiveType.Text.Trim());
+
+            ICell cellIsHuZhu = row.CreateCell(ISHUZHU);
+            if (cBHuZhu.Checked)
+                cellIsHuZhu.SetCellValue("是");
+            else
+                cellIsHuZhu.SetCellValue("否");
+
+            ICell cellHuZhuRelation = row.CreateCell(HUZHURELATION);
+            //如果不是户主，需要记录和户主关系
+            if (!cBHuZhu.Checked)
+                cellHuZhuRelation.SetCellValue(tBHuZhuRelation.Text.Trim());
+
+            ICell cellNoCarNumber = row.CreateCell(NOCARNUMBER);
+            cellNoCarNumber.SetCellValue(tBNoCarNumber.Text.Trim());
+
+            ICell cellNoCarDetail = row.CreateCell(NOCARDETAIL);
+            cellNoCarDetail.SetCellValue(tBNoCarDetail.Text.Trim());
+
+            ICell cellCarNum = row.CreateCell(CARNUM);
+            cellCarNum.SetCellValue(tBCarNum.Text.Trim());
 
             //如果车牌不等于豫H，则视为有车
             if(tBCarNumber.Text.Trim() != "豫H" || tBCarNumber.Text.Trim() != "")
@@ -374,6 +454,18 @@ namespace InfoCollect
             
             return true;
         }
-                
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cBHuZhu_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cBHuZhu.Checked)
+                tBHuZhuRelation.Enabled = false;
+            else
+                tBHuZhuRelation.Enabled = true;
+        }
     }
 }
